@@ -8,6 +8,7 @@ import { storage, db } from "../../firebase";
 import { UserContext } from '../../contexts/user';
 import makeid from "../../function";
 
+//Post 
 function Body() {
   const [user, setUser] = useContext(UserContext).user;
     const [caption, setCaption] = useState("");

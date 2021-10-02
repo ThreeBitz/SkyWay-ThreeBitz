@@ -9,6 +9,9 @@ import { signInWithGoogle, logout } from '../../services/auth'
 import { UserContext } from '../../contexts/user';
 import { NavLink } from 'react-router-dom';
 
+
+// nav bar & signin 
+
 function Header() {
 
   const [user, setUser] = useContext(UserContext).user;
