@@ -9,6 +9,9 @@ import { signInWithGoogle, logout } from '../../services/auth'
 import { UserContext } from '../../contexts/user';
 import { NavLink } from 'react-router-dom';
 
+
+// nav bar & signin 
+
 function Header() {
 
   const [user, setUser] = useContext(UserContext).user;
@@ -21,7 +24,7 @@ function Header() {
 
 
   return (
-    <Navbar  variant="dark" class="navbar navbar-dark bg-light">
+    <Navbar  variant="dark" class="navbar navbar-light bg-light">
       <Container>
         <div>
       <img src={require("../../Assests/logo.png").default}  height="120px"  class="d-inline-block align-top" alt=""></img>

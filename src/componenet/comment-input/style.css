@@ -9,6 +9,7 @@
   }
   .commentInput__button {
     margin-left: 24px;
+  
   }
   
   .commentInput__textarea {
@@ -24,4 +25,11 @@
   
   .commentInput__textarea:focus {
     outline: none;
+  }
+  .commentInput__btn{
+    background-color: rgb(109, 213, 226);
+    color: aliceblue;
+    width: 80px;
+    /* border-color:rgb(109, 213, 226) ; */
+    border-radius: 15px;
   }

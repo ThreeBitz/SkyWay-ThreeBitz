@@ -8,6 +8,7 @@
   
   .createAPost__Top {
     margin: 0px 16px;
+   
   }
   
   .image-upload > input {
@@ -34,6 +35,7 @@
   
   .createAPost__textarea {
     border: none;
+    resize: none;
   }
   
   .createAPost__textarea:focus {
@@ -67,4 +69,8 @@
     position: relative;
     border-radius: 5px;
   }
-  
+  .body1{
+    margin-left: 30%;
+    margin-bottom: 10%;
+   
+  }

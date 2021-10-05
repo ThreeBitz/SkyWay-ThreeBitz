@@ -1,0 +1,6 @@
+/* .home{
+    background-image: linear-gradient(to right top, #e5b2e3, #d0b0ea, #b6afef, #97aff1, #72afef, #58b3ef, #3ab7ec, #00bae6, #00c3e4, #00cbdf, #00d3d8, #2fdacf);
+} */
+.app__body{
+    background-image: linear-gradient(to right top, #e5b2e3, #d0b0ea, #b6afef, #97aff1, #72afef, #58b3ef, #3ab7ec, #00bae6, #00c3e4, #00cbdf, #00d3d8, #2fdacf);
+}
