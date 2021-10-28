@@ -77,6 +77,7 @@ export default function Body () {
     
     // const cardBackground = require("../../../Assests/cardBackground.jpg").default
     return (
+
         <div className="body1">
              {user ? (
         <div className="imageUpload">
@@ -134,20 +135,11 @@ export default function Body () {
             </button>
           </div>
         </div>
-      ) : (
-        <div
-          style={{
-            marginTop: "30px",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <AuthDialogs label="Login/Register" />
-          <p>to Post</p>
-        </div>
-      )}
+      ) : null
+      
+      
+      }
     </div>
+   
   );
 }

@@ -3,6 +3,7 @@ import Feed from './feed'
 import { auth } from '../firebase'
 import Header from './Header'
 import Body from './Body'
+import "./Dashboard.css"
 
 function Dashboard () {
   const [user, setUser] = useState(null);

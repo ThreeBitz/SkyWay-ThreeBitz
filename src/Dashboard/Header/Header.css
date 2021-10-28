@@ -1,5 +1,41 @@
+.skyWay{
+    font-weight: 800;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(30, 78, 94, 0.904);
+    font-style: italic;
+    opacity: 0.8;
+    
 
-  
-  .bg-custom-2 {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  }
+}
+.signin{
+background-color: antiquewhite;
+
+}
+.signinGoogle{
+    background-color: rgb(199, 239, 247);
+    border: 2px rgb(84, 201, 209) solid;
+    border-radius: 10px;
+    font-size: 15px;
+    color: rgb(5, 30, 53);
+    height: 40px;
+    margin-top: 8px;
+
+}
+.logout{
+    margin-top: 8px;
+    background-color: rgb(199, 239, 247);
+    border: 2px rgb(84, 201, 209) solid;
+    border-radius: 10px;
+    font-size: 15px;
+    color: rgb(5, 30, 53);
+   width: 100px;
+   height: 40px;
+}
+.Google{
+    height: 25px;
+}
+.img{
+    height: 60px;
+    border-radius: 50%;
+}

@@ -19,6 +19,7 @@ export const logout = async () => {
     await auth.signOut()
     .then(() => {
         logout_success = true;
+        window.location.reload(false)
     }).catch((error) => {
         console.log(error.message);
     })

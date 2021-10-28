@@ -4,16 +4,26 @@ import './App.css';
 import Dashboard from './Dashboard';
 import { UserContextProvider } from './contexts/user';
 
+
+
 function App() {
   return (
   
-  <Router >
+ 
     <UserContextProvider>
-    <Route path="/" component={Dashboard}>
+       <Router >
+    <Switch>
+     
+
+    <Route path="/Dashboard" component={Dashboard}>
         <Dashboard/>
       </Route>
+      
+     
+      </Switch>
+      </Router>
     </UserContextProvider>      
-  </Router>
+ 
   );
 }
 

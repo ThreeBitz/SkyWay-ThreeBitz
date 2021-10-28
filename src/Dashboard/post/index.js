@@ -5,7 +5,7 @@ import { Comment } from '../../componenet'
 import { db, storage } from '../../firebase'
 import CommentInput from '../../componenet/comment-input'
 
-export default function Post ({id, user, userName, username, postImageUrl, caption, comments,  userProfileUrl}) {
+export default function Post ({id, user, userName, username, postImageUrl, caption, comments,  photoURL}) {
  const deletePost = () => {
         //delete the image from firebase storage
 
@@ -47,10 +47,10 @@ export default function Post ({id, user, userName, username, postImageUrl, capti
             alt={userName}
             style={{ height: "25px", width: "25px" }}
           >
-            {userProfileUrl ?  <img className = "post__avatar" src = {userProfileUrl} alt="" />:userName.charAt(0) }
+            {photoURL ?  <img className = "post__avatar" src = {photoURL} alt="" />:userName.charAt(0) }
           </Avatar>
           <div className="post__headerInfo">
-            <p style={{ fontSize: "14px" }}><strong>{userName}</strong></p>
+            <p style={{ fontSize: "18px" , margin:"5px" }}><strong>{userName}</strong></p>
           </div>
         </div>  
              {user ? (

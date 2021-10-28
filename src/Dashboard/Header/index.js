@@ -8,7 +8,7 @@ import FormControl from 'react-bootstrap/FormControl'
 import { signInWithGoogle, logout } from '../../services/auth'
 import { UserContext } from '../../contexts/user';
 import { NavLink } from 'react-router-dom';
-
+import "./Header.css"
 
 // nav bar & signin 
 
@@ -24,27 +24,22 @@ function Header() {
 
 
   return (
-    <Navbar  variant="dark" class="navbar navbar-light bg-light">
+    <Navbar  variant="dark" class="navbar navbar-light"  style={{backgroundColor:"rgb(238, 251, 255)"}}>
       <Container>
         <div>
-      <img src={require("../../Assests/logo.png").default}  height="120px"  class="d-inline-block align-top" alt=""></img>
+          <lable className="skyWay">SkyWay</lable>
+      {/* <img src={require("../../Assests/logo.png").default}  height="100px"  class="d-inline-block align-top" alt="Skyway"></img> */}
       </div>
-        {/* <Form className="d-flex">
-          <FormControl
-            type="search"
-            placeholder="Search"
-            className="mr-2"
-            aria-label="Search"
-          />
-          <Button variant="p-3 mb-2 bg-light text-dark">Search</Button>
-        </Form> */}
+  
         <Nav className="me-auto">
           {/* <Nav.Link><Button variant="p-3 mb-2 bg-light text-dark" onClick={logout}>Logout</Button></Nav.Link> */}
           <Nav.Link>
-            {user ? <img src={user.photoURL} height="35px" border-radius="8px" /> : <Button variant="p-3 mb-2 bg-light text-dark" onClick={signInBtnClick}>Signin with google</Button>}
-            <Button class="btn btn-info" onClick={signInBtnClick}>Signin with google</Button>
+            {user ? <img src={user.photoURL} className="img" /> :null }
           </Nav.Link>
-        </Nav>
+          <Nav.Link> <button class="signinGoogle" onClick={signInBtnClick}>  <img src={require("../../Assests/google.png").default} className="Google"></img> Signin with google</button></Nav.Link>
+          <Nav.Link> <button class="logout" onClick={logout}> Logout</button></Nav.Link>
+          
+          </Nav>
       </Container>
     </Navbar>
   )
